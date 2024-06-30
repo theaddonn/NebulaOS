@@ -1,0 +1,39 @@
+[ui.system-info]
+type = "stackpanel"
+
+[ui.system-info.uefi]
+type = "stackpanel"
+
+[ui.system-info.uefi.firmware-vendor]
+type = "stackpanel"
+orientation = "vertical"
+
+[ui.system-info.uefi.firmware-vendor.title]
+type = "label"
+text_default = "Firmware Vendor: "
+
+text_color = "@ui.text.color"
+
+[ui.system-info.uefi.firmware-vendor.data]
+type = "label"
+text_default = "unknown"
+
+text_color = "@ui.text.color"
+
+[ui.system-info.uefi.uefi-revision]
+type = "stackpanel"
+orientation = "vertical"
+
+[ui.system-info.uefi.uefi-revision.title]
+type = "label"
+text_default = "UEFI revison: "
+
+text_color = "@ui.text.color"
+
+[ui.system-info.uefi.uefi-revision.data]
+type = "label"
+text_default = "unknown"
+
+text_color = "@ui.text.color"
+
+
