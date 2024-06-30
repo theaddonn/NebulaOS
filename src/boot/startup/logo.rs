@@ -1,8 +1,8 @@
 use alloc::vec::Vec;
 use core::{mem, slice};
 
-use uefi::Error;
 use uefi::proto::console::gop::{BltPixel, GraphicsOutput};
+use uefi::Error;
 
 pub fn startup_logo(
     _alpha: &u8,

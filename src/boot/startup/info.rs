@@ -9,7 +9,7 @@ pub fn startup_info() {
     let firmware_vendor = system_table.firmware_vendor();
 
     println!(
-        "UEFI VERSION:      {}.{} ({})" ,
+        "UEFI VERSION:      {}.{} ({})",
         uefi_revision.major(),
         uefi_revision.minor(),
         uefi_revision.0

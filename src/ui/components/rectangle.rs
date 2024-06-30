@@ -1,9 +1,10 @@
-use uefi_graphics2::UefiDisplayError;
 use uefi_graphics2::embedded_graphics::draw_target::DrawTarget;
 use uefi_graphics2::embedded_graphics::geometry::{Point, Size};
 use uefi_graphics2::embedded_graphics::pixelcolor::Rgb888;
 use uefi_graphics2::embedded_graphics::primitives::Rectangle;
 use uefi_graphics2::UefiDisplay;
+use uefi_graphics2::UefiDisplayError;
+
 use crate::ui::component::UiComponent;
 
 struct RectangleUiComponent {

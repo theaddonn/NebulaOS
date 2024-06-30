@@ -39,7 +39,6 @@ pub enum LoadNebulaUiError {
 //     }
 // }
 
-
 pub fn load_nebula_ui(file_content: &[u8]) -> Result<UiControl, LoadNebulaUiError> {
     // let text = match String::from_utf8(file_content.to_vec()) {
     //     Ok( text ) => { text.as_str() }

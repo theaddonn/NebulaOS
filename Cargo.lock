@@ -6,9 +6,9 @@ version = 3
 name = "NebulaOS"
 version = "0.1.0"
 dependencies = [
- "hex",
- "uefi",
- "uefi-graphics2",
+    "hex",
+    "uefi",
+    "uefi-graphics2",
 ]
 
 [[package]]
@@ -53,11 +53,11 @@ version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0649998afacf6d575d126d83e68b78c0ab0e00ca2ac7e9b3db11b4cbe8274ef0"
 dependencies = [
- "az",
- "byteorder",
- "embedded-graphics-core",
- "float-cmp",
- "micromath",
+    "az",
+    "byteorder",
+    "embedded-graphics-core",
+    "float-cmp",
+    "micromath",
 ]
 
 [[package]]
@@ -66,8 +66,8 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ba9ecd261f991856250d2207f6d8376946cd9f412a2165d3b75bc87a0bc7a044"
 dependencies = [
- "az",
- "byteorder",
+    "az",
+    "byteorder",
 ]
 
 [[package]]
@@ -76,7 +76,7 @@ version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "98de4bbd547a563b716d8dfa9aad1cb19bfab00f4fa09a6a4ed21dbcf44ce9c4"
 dependencies = [
- "num-traits",
+    "num-traits",
 ]
 
 [[package]]
@@ -103,7 +103,7 @@ version = "0.2.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "da0df0e5185db44f69b44f26786fe401b6c293d1907744beaa7fa62b2e5a517a"
 dependencies = [
- "autocfg",
+    "autocfg",
 ]
 
 [[package]]
@@ -112,7 +112,7 @@ version = "1.0.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e835ff2298f5721608eb1a980ecaee1aef2c132bf95ecc026a11b7bf3c01c02e"
 dependencies = [
- "unicode-ident",
+    "unicode-ident",
 ]
 
 [[package]]
@@ -121,7 +121,7 @@ version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bcada80daa06c42ed5f48c9a043865edea5dc44cbf9ac009fda3b89526e28607"
 dependencies = [
- "ptr_meta_derive",
+    "ptr_meta_derive",
 ]
 
 [[package]]
@@ -130,9 +130,9 @@ version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bca9224df2e20e7c5548aeb5f110a0f3b77ef05f8585139b7148b59056168ed2"
 dependencies = [
- "proc-macro2",
- "quote",
- "syn 1.0.109",
+    "proc-macro2",
+    "quote",
+    "syn 1.0.109",
 ]
 
 [[package]]
@@ -141,7 +141,7 @@ version = "1.0.36"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0fa76aaf39101c457836aec0ce2316dbdc3ab723cdda1c6bd4e6ad4208acaca7"
 dependencies = [
- "proc-macro2",
+    "proc-macro2",
 ]
 
 [[package]]
@@ -150,9 +150,9 @@ version = "1.0.109"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237"
 dependencies = [
- "proc-macro2",
- "quote",
- "unicode-ident",
+    "proc-macro2",
+    "quote",
+    "unicode-ident",
 ]
 
 [[package]]
@@ -161,9 +161,9 @@ version = "2.0.58"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "44cfb93f38070beee36b3fef7d4f5a16f27751d94b187b666a5cc5e9b0d30687"
 dependencies = [
- "proc-macro2",
- "quote",
- "unicode-ident",
+    "proc-macro2",
+    "quote",
+    "unicode-ident",
 ]
 
 [[package]]
@@ -172,7 +172,7 @@ version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "df79298e11f316400c57ec268f3c2c29ac3c4d4777687955cd3d4f3a35ce7eba"
 dependencies = [
- "bit_field",
+    "bit_field",
 ]
 
 [[package]]
@@ -181,14 +181,14 @@ version = "0.28.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a9c0a56dc9fed2589aad6ddca11c2584968fc21f227b5d7083bb8961d26a69fa"
 dependencies = [
- "bitflags",
- "cfg-if",
- "log",
- "ptr_meta",
- "ucs2",
- "uefi-macros",
- "uefi-raw",
- "uguid",
+    "bitflags",
+    "cfg-if",
+    "log",
+    "ptr_meta",
+    "ucs2",
+    "uefi-macros",
+    "uefi-raw",
+    "uguid",
 ]
 
 [[package]]
@@ -197,8 +197,8 @@ version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "048a38738fc53444d659b482e2f3fe9cac517e3c119456e13771584f79c46eaf"
 dependencies = [
- "embedded-graphics",
- "uefi",
+    "embedded-graphics",
+    "uefi",
 ]
 
 [[package]]
@@ -207,9 +207,9 @@ version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "26a7b1c2c808c3db854a54d5215e3f7e7aaf5dcfbce095598cba6af29895695d"
 dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.58",
+    "proc-macro2",
+    "quote",
+    "syn 2.0.58",
 ]
 
 [[package]]
@@ -218,9 +218,9 @@ version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "efa8716f52e8cab8bcedfd5052388a0f263b69fe5cc2561548dc6a530678333c"
 dependencies = [
- "bitflags",
- "ptr_meta",
- "uguid",
+    "bitflags",
+    "ptr_meta",
+    "uguid",
 ]
 
 [[package]]

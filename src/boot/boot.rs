@@ -1,19 +1,17 @@
 use alloc::string::{String, ToString};
 use core::ptr;
+
 use uefi::helpers::system_table;
 use uefi::println;
-
 use uefi_graphics2::embedded_graphics::draw_target::DrawTarget;
-use uefi_graphics2::embedded_graphics::Drawable;
 use uefi_graphics2::embedded_graphics::geometry::Size;
-use uefi_graphics2::embedded_graphics::iterator::PixelIteratorExt;
-use uefi_graphics2::embedded_graphics::mono_font::ascii::{FONT_4X6, FONT_6X10};
-use uefi_graphics2::embedded_graphics::mono_font::jis_x0201::FONT_8X13;
+use uefi_graphics2::embedded_graphics::mono_font::ascii::FONT_4X6;
 use uefi_graphics2::embedded_graphics::mono_font::MonoTextStyle;
 use uefi_graphics2::embedded_graphics::pixelcolor::{Rgb888, RgbColor, WebColors};
 use uefi_graphics2::embedded_graphics::prelude::Point;
 use uefi_graphics2::embedded_graphics::primitives::{Primitive, PrimitiveStyleBuilder, Rectangle};
 use uefi_graphics2::embedded_graphics::text::Text;
+use uefi_graphics2::embedded_graphics::Drawable;
 use uefi_graphics2::UefiDisplay;
 
 use crate::boot::gop;
@@ -69,16 +67,14 @@ pub fn nebula_boot() -> NebulaBootResult {
     loop {
         if x < (mode.resolution().0 as i32 - rect_x) && x > 0 {
             x += cx;
-        }
-        else {
+        } else {
             cx = -cx;
             x += cx;
         }
 
         if y < (mode.resolution().1 as i32 - rect_y) && y > 0 {
             y += cy;
-        }
-        else {
+        } else {
             cy = -cy;
             y += cy;
         }
@@ -91,14 +87,17 @@ pub fn nebula_boot() -> NebulaBootResult {
             .fill_color(Rgb888::GREEN)
             .build();
 
-        let rect = Rectangle::new(Point { x, y  }, Size { width: rect_x as u32, height: rect_y as u32 });
-        rect
-            .into_styled(style)
-            .draw(&mut display).unwrap();
+        let rect = Rectangle::new(
+            Point { x, y },
+            Size {
+                width: rect_x as u32,
+                height: rect_y as u32,
+            },
+        );
+        rect.into_styled(style).draw(&mut display).unwrap();
 
         display.flush();
     }
-
 
     let _ = load_nebula_ui(include_bytes!("../assets/ui/test.nui"));
 

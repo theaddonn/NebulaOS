@@ -1,7 +1,7 @@
-use uefi::Error;
 use uefi::prelude::BootServices;
 use uefi::proto::console::gop::GraphicsOutput;
 use uefi::table::boot::ScopedProtocol;
+use uefi::Error;
 
 pub fn start_gop(boot_services: &BootServices) -> Result<ScopedProtocol<GraphicsOutput>, Error> {
     let gop_handle = match boot_services.get_handle_for_protocol::<GraphicsOutput>() {
