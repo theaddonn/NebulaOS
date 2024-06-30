@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-uefi = "0.28.0"
-uefi-graphics2 = "0.2.0"
+uefi = { version = "0.28.0", features = ["panic_handler", "global_allocator"] }
+uefi-graphics2 = "0.2.1"
 
 hex = "0.4.3"

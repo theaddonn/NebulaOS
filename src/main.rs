@@ -3,8 +3,9 @@
 
 extern crate alloc;
 
+use uefi::helpers::{init, system_table};
 use uefi::prelude::*;
-use uefi_services::{println, system_table};
+use uefi::println;
 
 use crate::boot::boot::{nebula_boot, NebulaBootResult};
 
@@ -14,7 +15,7 @@ mod ui;
 
 #[entry]
 fn main(_image_handle: Handle, mut boot_system_table: SystemTable<Boot>) -> Status {
-    uefi_services::init(&mut boot_system_table).unwrap();
+    init(&mut boot_system_table).unwrap();
 
     // Disable the watchdog timer
     boot_system_table

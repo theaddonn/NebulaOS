@@ -193,9 +193,9 @@ dependencies = [
 
 [[package]]
 name = "uefi-graphics2"
-version = "0.2.0"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "632b6e12461ed510364ad30c595e9d9d8a47d24e17fec596a51d0509cccb8cbf"
+checksum = "048a38738fc53444d659b482e2f3fe9cac517e3c119456e13771584f79c46eaf"
 dependencies = [
  "embedded-graphics",
  "uefi",
